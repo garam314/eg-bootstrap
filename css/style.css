@@ -1,0 +1,45 @@
+.background-yellow
+{
+    background-color: rgb(255, 199, 44);
+}
+
+.background-logo-b
+{
+    background-color: rgb(16, 24, 32);
+}
+
+.font-style
+{
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.img-size
+{
+    width: 100%;
+    object-fit: contain;
+}
+/* #logo
+{
+    max-width: 100%;
+    height: auto;
+} */
+.c1
+{
+    background-color: aquamarine;
+    
+}
+
+.c2
+{
+    background-color: red;
+}
+
+.c3
+{
+    background-color: brown;
+}
+
+#logo_blanco
+{
+    width: 30%;
+}
