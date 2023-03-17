@@ -17,12 +17,12 @@
 {
     max-width: 100%;
     height: auto;
-    object-fit: cover;
+    object-fit: cover; 
 }
 
 #img-p-libre, #img-s-maquinas, #img-c-grupales
 {
-    filter: grayscale(100%);
+    filter: grayscale(50%);
     border-radius: 10px;
     box-shadow: 0px 0px 20px black;
 }
