@@ -44,6 +44,16 @@
     color: lightblue;
 }
 
+#logo_blanco
+{
+    width: 30%;
+}
+
+@media (max-width:1000px)
+{
+    
+}
+
 .c1
 {
     background-color: aquamarine;
@@ -60,7 +70,3 @@
     background-color: brown;
 }
 
-#logo_blanco
-{
-    width: 30%;
-}
