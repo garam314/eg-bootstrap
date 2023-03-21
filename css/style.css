@@ -39,6 +39,10 @@
     filter: none;
 }
 
+.pointer:hover{
+    cursor: pointer;
+    color: lightblue;
+}
 
 .c1
 {
