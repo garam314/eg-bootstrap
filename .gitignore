@@ -1,2 +1,5 @@
 /images/*.psd
 .vscode
+node_modules
+css/*.scss
+css/*.map
