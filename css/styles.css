@@ -42,4 +42,40 @@
 
 #logo_blanco {
   width: 30%;
+}
+
+section div div p#short {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  section div div p.extend {
+    display: none;
+  }
+  section div div p.short {
+    display: unset;
+  }
+}
+@media only screen and (min-width: 992px) {
+  section div div p.extend {
+    display: unset;
+  }
+  section div div p.short {
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) {
+  section div div p.extend {
+    display: unset;
+  }
+  section div div p.short {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  section div div p.extend {
+    display: unset;
+  }
+  section div div p.short {
+    display: none;
+  }
 }/*# sourceMappingURL=styles.css.map */
