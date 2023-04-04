@@ -19,7 +19,7 @@
 }
 
 .img-size-footer {
-  max-width: 25%;
+  max-width: 30%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
@@ -33,6 +33,7 @@
 
 #img-p-libre:hover, #img-s-maquinas:hover, #img-c-grupales:hover {
   filter: none;
+  cursor: pointer;
 }
 
 .pointer:hover {
@@ -63,7 +64,7 @@ section div div p#short {
     display: none;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 767px) {
   section div div p.extend {
     display: unset;
   }
@@ -71,11 +72,25 @@ section div div p#short {
     display: none;
   }
 }
-@media only screen and (max-width: 767px) {
-  section div div p.extend {
-    display: unset;
+
+@media (min-width: 767px) and (max-width: 1199px) {
+  section div#salas-principal {
+    flex-direction: column;
+    align-content: center;
+    gap: 20px;
   }
-  section div div p.short {
-    display: none;
+  section div .col-md-3.mt-4 {
+    width: 60%;
+  }
+  section div .col-md-3.mt-4 p {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  section div#salas-principal {
+    flex-direction: row;
+  }
+  section div .col-md-3.mt-4 {
+    width: 30%;
   }
 }/*# sourceMappingURL=styles.css.map */
