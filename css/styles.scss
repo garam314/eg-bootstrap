@@ -1,0 +1,134 @@
+// @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+@mixin smartphone {
+    @media only screen and (max-width: 767px) {
+      @content;
+    }
+  }
+
+@mixin tablet {
+    @media only screen and (min-width: 768px) {
+      @content;
+    }
+  }
+  
+  @mixin desktop {
+    @media only screen and (min-width: 992px) {
+      @content;
+    }
+  }
+  
+  @mixin large {
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+  }
+
+
+/*CLASES PERSONALIZADAS*/
+.background-yellow
+{
+    background-color: rgb(255, 199, 44);
+}
+
+.background-logo-b
+{
+    background-color: rgb(16, 24, 32);
+}
+
+.font-style
+{
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.img-size
+{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; 
+}
+
+.img-size-footer
+{
+    max-width: 25%;
+    height: auto;
+    object-fit: cover; 
+}
+
+#img-p-libre, #img-s-maquinas, #img-c-grupales
+{
+    filter: grayscale(100%);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px black;
+}
+
+#img-p-libre:hover, #img-s-maquinas:hover, #img-c-grupales:hover
+{
+    filter: none;
+}
+
+.pointer:hover{
+    cursor: pointer;
+    color: lightblue;
+}
+
+#logo_blanco
+{
+    width: 30%;
+}
+
+
+section div div p
+{
+    &#short
+    {
+        display: none;
+    }
+    @include tablet
+    {
+        &.extend
+        {
+            display: none;
+        }
+        &.short
+        {
+            display: unset;
+        }
+    }
+
+    @include desktop
+    {
+        &.extend
+        {
+            display: unset;
+        }
+        &.short
+        {
+            display: none;
+        }
+    }
+
+    @include desktop
+    {
+        &.extend
+        {
+            display: unset;
+        }
+        &.short
+        {
+            display: none;
+        }
+    }
+
+    @include smartphone()
+    {
+        &.extend
+        {
+            display: unset;
+        }
+        &.short
+        {
+            display: none;
+        }
+    }
+}
