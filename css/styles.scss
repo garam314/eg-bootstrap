@@ -30,15 +30,31 @@
   }
 
 
+  @keyframes logo-girar-h
+  {
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(360deg);
+    }
+  }
+
 /*CLASES PERSONALIZADAS*/
+
+$bg-blue: rgb(16, 24, 32);
+$bg-yellow: rgb(255, 199, 44);
+
 .background-yellow
 {
-    background-color: rgb(255, 199, 44);
+    background-color: $bg-yellow;
 }
 
 .background-logo-b
 {
-    background-color: rgb(16, 24, 32);
+    background-color: $bg-blue;
 }
 
 .font-style
@@ -84,6 +100,37 @@
 }
 
 
+body
+{
+    footer
+    {
+        ul
+        {
+            li
+            {
+                img:hover
+                {
+                    animation-name: logo-girar-h;
+                    animation-duration: 1s;
+                    // animation: name duration timing-function delay iteration-count direction fill-mode;
+                }
+            }
+        }
+    }
+
+}
+
+.cerrar-modal
+{
+    background-color: $bg-yellow;
+    &:hover
+    {
+        background-color: $bg-blue;
+        color: white;
+    }
+}
+
+
 section div div p
 {
     &#short
@@ -114,7 +161,7 @@ section div div p
         }
     }
 
-    @include smartphone()
+    @include smartphone
     {
         &.extend
         {
@@ -159,6 +206,52 @@ section div
         .col-md-3.mt-4
         {
             width: 30%;
+        }
+    }
+}
+
+footer
+{
+    div
+    {
+        div
+        {
+            a
+            {
+                img#logo-fotter-eg
+                {
+                    @include smartphone
+                    {
+                        width: 50px;
+                    }
+
+                    @include tablet
+                    {
+                        width: 50px;
+                    }
+                }
+            }
+
+            ul
+            {
+                li
+                {
+                    a
+                    {
+                        img
+                        {
+                            @include smartphone
+                            {
+                                width: 30px;
+                            }
+                            @include tablet
+                            {
+                                width: 30px;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
