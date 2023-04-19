@@ -1,10 +1,10 @@
 /*CLASES PERSONALIZADAS*/
 .background-yellow {
-  background-color: #ffc72c
+  background-color: rgb(255, 199, 44);
 }
 
 .background-logo-b {
-  background-color: #101820;
+  background-color: rgb(16, 24, 32);
 }
 
 .font-style {
@@ -43,6 +43,13 @@
 
 #logo_blanco {
   width: 30%;
+}
+
+body img#logo-whatsapp {
+  width: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
 }
 
 section div div p#short {

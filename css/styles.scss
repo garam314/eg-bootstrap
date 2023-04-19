@@ -83,6 +83,17 @@
     width: 30%;
 }
 
+body
+{
+    & img#logo-whatsapp
+    {
+        width: 50px;
+        position: fixed;
+        bottom: 30px;
+        right: 20px;
+    }
+}
+
 
 section div div p
 {
