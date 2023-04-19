@@ -1,3 +1,11 @@
+@keyframes logo-girar-h {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 /*CLASES PERSONALIZADAS*/
 .background-yellow {
   background-color: rgb(255, 199, 44);
@@ -45,11 +53,17 @@
   width: 30%;
 }
 
-body img#logo-whatsapp {
-  width: 50px;
-  position: fixed;
-  bottom: 30px;
-  right: 20px;
+body footer ul li img:hover {
+  animation-name: logo-girar-h;
+  animation-duration: 1s;
+}
+
+.cerrar-modal {
+  background-color: rgb(255, 199, 44);
+}
+.cerrar-modal:hover {
+  background-color: rgb(16, 24, 32);
+  color: white;
 }
 
 section div div p#short {
@@ -99,5 +113,26 @@ section div div p#short {
   }
   section div .col-md-3.mt-4 {
     width: 30%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  footer div div a img#logo-fotter-eg {
+    width: 50px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  footer div div a img#logo-fotter-eg {
+    width: 50px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  footer div div ul li a img {
+    width: 30px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  footer div div ul li a img {
+    width: 30px;
   }
 }/*# sourceMappingURL=styles.css.map */
